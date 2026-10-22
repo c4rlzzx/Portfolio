@@ -1,0 +1,289 @@
+body {
+  /* Roxo bem escuro e moderno de fundo */
+  background-color: #1a162b;
+  /* Verde menta suave e legível para parágrafos e textos gerais */
+  color: #a3f7bf;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(36, 30, 61, 0.85);
+  backdrop-filter: blur(8px);               
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  border-radius: 12px;
+  padding: 16px 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(80, 250, 123, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+h1 {
+  color: #00ff88;
+  font-size: 48px;
+}
+
+h2 {
+  color: #50fa7b;
+  font-size: 24px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 12px;
+  border: 2px solid #00ff88;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px 16px;
+  border: 1px solid #50fa7b;
+  text-align: left;
+}
+
+th {
+  background-color: #241e3d;
+  color: #00ff88;
+  font-weight: 700;
+}
+
+a {
+  color: #50fa7b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #8be9fd; 
+}
+
+footer {
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #564b86;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(80, 250, 123, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 255, 136, 0.35);
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: #ff5555;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: #00ff88;
+}
+
+.gostos {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.gostos li {
+  background-color: #241e3d;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a162b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b325c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+}
+
+/* Container do Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaço entre cada grupo de perguntas */
+}
+
+/* Agrupamento de legenda + campo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Espaço pequeno entre a label e o input */
+  text-align: left; /* Garante que as legendas ficam à esquerda */
+}
+
+.form-group label {
+  color: #a3f7bf; /* Tom de verde suave para as legendas */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Estilização dos Inputs, Selects e Textareas */
+input, select, textarea {
+  width: 100%; /* Ocupa toda a largura do card */
+  padding: 12px;
+  background-color: #1a162b; /* Roxo escuro combinando com o fundo do site */
+  color: #ffffff;
+  border: 1px solid rgba(80, 250, 123, 0.2); /* Bordinha verde sutil */
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Efeito ao clicar no campo */
+input:focus, select:focus, textarea:focus {
+  border-color: #00ff88; /* Destaca com verde néon quando ativo */
+}
+
+/* Ajuste específico para o select (combobox) */
+select {
+  cursor: pointer;
+}
+
+/* Botão de Enviar */
+.btn-enviar {
+  background-color: #00ff88; /* Verde forte néon */
+  color: #1a162b; /* Texto escuro para contraste */
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+  width: 100%; /* Botão do tamanho total no mobile */
+  margin-top: 8px;
+}
+
+.btn-enviar:hover {
+  background-color: #50fa7b; /* Muda para um verde ligeiramente mais claro */
+  transform: translateY(-1px); /* Pequeno efeito de elevação */
+}
+
+.btn-enviar:active {
+  transform: translateY(1px); /* Feedback de clique */
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  /* 1. Header arrumado e centrado */
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 2. Menu com quebra fluida e espaçamento proporcional */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  nav a {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  /* 3. Título ajustado para não quebrar feio */
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* 4. Imagem do Punpun perfeitamente centrada */
+  img {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 5. Conteúdo principal centrado */
+  main {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    text-align: left; /* Mantém o texto interno dos cartões legível à esquerda */
+    padding: 18px;
+  }
+
+  /* 6. Tags de gostos alinhadas */
+  .gostos {
+    justify-content: flex-start;
+  }
+}
