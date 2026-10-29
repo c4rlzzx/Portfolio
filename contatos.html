@@ -15,11 +15,12 @@
       <a href="projetos.html">Meus projetos</a>
       <a href="contatos.html">Contato</a>
     </nav>
+    <button id="btn-tema" class="btn-tema">[ Modo: Terminal ]</button>
   </header>
     <main>
   <div class="card">
     <h2>Fale comigo</h2>
-    <form>
+    <form id="formulario">
       <div class="form-group">
         <label for="nome">Qual o seu nome?</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
@@ -49,12 +50,15 @@
         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como posso ajudar?"></textarea>
       </div>
 
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
+     <button type="submit" class="btn-enviar">Enviar</button>
+  <p id="resposta" style="margin-top: 16px; font-weight: bold; color: #00ff88;"></p>
+</form>
   </div>
 </main>
 <footer>
     <p>&copy; 2026 Carlos Henrique.</p>
 </footer>
+<script src="js/contato.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

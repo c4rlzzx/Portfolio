@@ -287,3 +287,62 @@ select {
     justify-content: flex-start;
   }
 }
+
+/* Estilo base do botão de tema no header */
+.btn-tema {
+  background-color: transparent;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-tema:hover {
+  background-color: #00ff88;
+  color: #1a162b;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+/* ==========================================
+   MODO MATRIX / TERMINAL AMOLED
+   ========================================== */
+body.modo-matrix {
+  background-color: #000000; /* Preto AMOLED puro */
+  color: #00ff41;            /* Verde clássico de terminal */
+}
+
+/* Deixa os cards e o header pretos com borda de terminal */
+body.modo-matrix header,
+body.modo-matrix .card,
+body.modo-matrix input,
+body.modo-matrix select,
+body.modo-matrix textarea {
+  background-color: #030a04; /* Quase 100% preto com um pingo de verde */
+  border: 1px solid #00ff41;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.15); /* Brilho verde suave em volta */
+}
+
+/* Títulos e links com efeito de brilho neon (glow) */
+body.modo-matrix h1,
+body.modo-matrix h2,
+body.modo-matrix a,
+body.modo-matrix th {
+  color: #00ff41;
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6); /* Efeito monitor CRT */
+}
+
+/* Tags de gostos no modo terminal */
+body.modo-matrix .gostos li {
+  background-color: #000000;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+}
+
+#resposta.erro {
+  color: #ff5555 !important; /* Vermelho alerta para erros */
+}
